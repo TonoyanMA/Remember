@@ -76,7 +76,7 @@ public class MainController {
 
         model.addAttribute("messages", messages);
 
-        return "redirect:/main";
+        return "/main";
     }
 
     private void saveFile(@Valid Message message, @RequestParam("file") MultipartFile file) throws IOException {
