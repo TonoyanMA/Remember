@@ -6,7 +6,7 @@
 <div class="collapse <#if message??>show</#if> mb-3" id="collapseExample">
     <div class="form-group mb-3">
         <form method="post" enctype="multipart/form-data">
-            <div class="mb-2">
+            <div class="mb-3">
                 <input class="form-control ${(textError??)?string('is-invalid', '')}" type="text"
                        value="<#if message??>${message.text}</#if>" name="text" placeholder="Add your message">
                 <#if textError??>

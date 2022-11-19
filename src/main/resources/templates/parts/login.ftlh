@@ -92,6 +92,7 @@
 
 <#macro logout>
     <form class="d-flex" action="/logout" method="post">
-        <button type="submit" class="btn btn-primary">Sign Out</button>
+        <button type="submit" class="btn btn-primary"><#if user??>Sign Out<#else>Log in</#if></button>
     </form>
+
 </#macro>
