@@ -26,7 +26,7 @@
             <div class="input-group mb-3">
                 <input class="form-control" type="file" name="file" id="inputGroupFile04"
                        aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                <input type="hidden" name="id" value="<#if message??>${message.id}</#if>" />
+                <input type="hidden" name="id" value="<#if message??>${message.id}<#else>-1</#if>" />
                 <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Choose file
                 </button>
             </div>
