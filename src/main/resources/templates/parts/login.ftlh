@@ -1,3 +1,4 @@
+<#include "security.ftlh">
 <#macro login path isRegisterForm>
     <form action="${path}" method="post">
         <div class="mb-3 form-group row">

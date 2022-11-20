@@ -2,15 +2,15 @@
 <@c.page>
     <div class="conteiner mb-3">
         <div class="d-grid gap-3 d-md-flex">
-                <h3>${userChannel.username}</h3>
-                <#if !isCurrentUser>
-                    <#if isSubscriber>
-                        <a class="btn btn-info" href="/user/unsubscribe/${userChannel.id}">Unsubscribe</a>
-                    <#else>
-                        <a class="btn btn-info" href="/user/subscribe/${userChannel.id}">Subscribe</a>
-                    </#if>
+            <h3>${userChannel.username}</h3>
+            <#if !isCurrentUser>
+                <#if isSubscriber>
+                    <a class="btn btn-info" href="/user/unsubscribe/${userChannel.id}">Unsubscribe</a>
+                <#else>
+                    <a class="btn btn-info" href="/user/subscribe/${userChannel.id}">Subscribe</a>
                 </#if>
-            </div>
+            </#if>
+        </div>
     </div>
 
     <div class="conteiner mb-3">

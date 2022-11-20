@@ -9,7 +9,7 @@
                 Email:
             </label>
             <div class="col-sm-5">
-                <input class="form-control" type="email" name="email" value="${email!""}" placeholder="some@some.com"/>
+                <input class="form-control" type="email" name="email" value="${email!""}" placeholder="some@some.com" />
             </div>
         </div>
         <div class="mb-3 form-group row">
@@ -17,7 +17,7 @@
                 Password:
             </label>
             <div class="col-sm-5">
-                <input class="form-control" type="password" name="password" placeholder="Password"/>
+                <input class="form-control" type="password" name="password" placeholder="Password" />
             </div>
         </div>
         <div class="mb-3 form-group row">
