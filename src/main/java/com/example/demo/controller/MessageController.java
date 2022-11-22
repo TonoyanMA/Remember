@@ -112,20 +112,20 @@ public class MessageController {
     @GetMapping("/user-messages/{user}")
     public String userMessage(
             @AuthenticationPrincipal User currentUser,
-            @PathVariable User author,
+            @PathVariable User user,
             @RequestParam (required = false) Message message,
             Model model,
             @PageableDefault(sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable
     ){
-        Page<MessageDto> page = messageRepo.findAllByAuthor(pageable, currentUser, author);
+        Page<MessageDto> page = messageRepo.findAllByAuthor(pageable, currentUser, user);
 
-        model.addAttribute("userChannel", author);
-        model.addAttribute("subscriptionsCount", author.getSubscriptions().size());
-        model.addAttribute("subscribersCount", author.getSubscribers().size());
-        model.addAttribute("isSubscriber", author.getSubscribers().contains(currentUser));
+        model.addAttribute("userChannel", user);
+        model.addAttribute("subscriptionsCount", user.getSubscriptions().size());
+        model.addAttribute("subscribersCount", user.getSubscribers().size());
+        model.addAttribute("isSubscriber", user.getSubscribers().contains(currentUser));
         model.addAttribute("message", message);
-        model.addAttribute("isCurrentUser", currentUser.equals(author));
-        model.addAttribute("url", "/author-messages/" + author.getId());
+        model.addAttribute("isCurrentUser", currentUser.equals(user));
+        model.addAttribute("url", "/user-messages/" + user.getId());
         model.addAttribute("page", page);
 
         return "userMessages";
