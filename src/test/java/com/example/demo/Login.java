@@ -1,7 +1,7 @@
 package com.example.demo;
 
 
-import com.example.demo.controller.MainController;
+import com.example.demo.controller.MessageController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class Login {
     private MockMvc mockMvc;
 
     @Autowired
-    private MainController controller;
+    private MessageController controller;
 
 
     @Test
