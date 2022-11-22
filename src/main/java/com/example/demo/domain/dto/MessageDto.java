@@ -1,7 +1,7 @@
 package com.example.demo.domain.dto;
 
 import com.example.demo.domain.Message;
-import com.example.demo.domain.MessageHelper;
+import com.example.demo.domain.util.MessageHelper;
 import com.example.demo.domain.User;
 
 public class MessageDto {

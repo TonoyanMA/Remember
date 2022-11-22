@@ -18,9 +18,9 @@
                     <div class="row align-items-center">
                         <a class="col" href="/messages/${message.id}/like">
                             <#if message.meLikes>
-                                <img src="/img/heart2.png" class="align-self-start" width="15" height="15">
+                                <img src="/img/heart2.png" class="align-self-start" width="15" height="15" />
                             <#else>
-                                <img src="/img/heart.png" class="align-self-start" width="15" height="15">
+                                <img src="/img/heart.png" class="align-self-start" width="15" height="15" />
                             </#if>
                             <span class="col">${message.likes}</span>
                         </a>
